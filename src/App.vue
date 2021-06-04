@@ -15,7 +15,7 @@ export default {
     return { users: [] };
   },
   mounted() {
-    axios.get('http://1.116.145.253/:3000/api/users').then((res) => {
+    axios.get('api/users').then((res) => {
       this.users = res.data;
     });
   },
