@@ -16,7 +16,7 @@ export default {
     return { users: [] };
   },
   mounted() {
-    axios.get('api/users').then((res) => {
+    axios.get('http://43.138.63.235:3000/api/users').then((res) => {
       this.users = res.data;
     });
   },
